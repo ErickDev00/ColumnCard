@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+
+section{
+    margin: 0 auto;
+    margin-top: 6%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    justify-content:flex-start;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', sans-serif;
+    padding-top: 130px;
+    font-stretch:extra-condensed;
+    letter-spacing: -2.5px;
+    font-size: 35px;
+    font-weight:bold;
+    color: hsla(0, 0%, 100%, 0.90);
+    text-decoration: none;
+}
+
+/*(topo,direita,baixo,esquerda)*/
+
+
+p{
+    margin-top: 35px;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: 'Lexend Deca', sans-serif;
+    word-spacing: 2px;
+    font-weight: 400;
+    text-align:left;
+    justify-content: left;
+}
+
+.sedans{
+    background-color: var(--Brightorange);
+    color: hsla(0, 0%, 100%, 0.75);
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.suvs{
+    background-color: var(--Darkcyan);
+    color: hsla(0, 0%, 100%, 0.75);
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.luxury{
+    background-color: var(--Verydarkcyan);
+    color: hsla(0, 0%, 100%, 0.75);
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.textos{
+    margin-left: -20px;
+    margin-right: 40px;
+}
+
+.botoes1, .botoes2{
+    margin-top: 100px;
+    margin-bottom: 45px;
+}
+
+.botoes1{
+    color: var(--Brightorange);
+}
+
+
+.botoes2{
+    color: var(--Darkcyan);
+}
+
+
+.botoes3{
+    margin-top: 101px;
+    color: var(--Verydarkcyan);
+}
+
+
+.carro1, .carro2, .carro3{
+    max-height: 50px;
+    position: relative;
+    right: -40px;
+    padding-top: 50px;
+}
+
+
+button{
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    height: 40px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width:500px){
+    section{
+        display:flex;
+        flex:1;
+        flex-direction: column;
+    }
+    .sedans, .suvs, .luxury{
+        display:flex;
+        flex:1;
+        flex-direction: column;
+    }
+
+    .sedans{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .luxury{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    h1, p {
+        padding-left: 65px;
+    }
+
+    .botoes1, .botoes2, .botoes3{
+        margin-left: 60px;
+    }
+
+    .botoes3{
+        margin-bottom: 45px;
+    }
+}
